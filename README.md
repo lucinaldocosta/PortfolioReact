@@ -31,4 +31,6 @@ GitHub: https://github.com/lucinaldocosta
 
 Youtube: https://www.youtube.com/@LC-Codes
 
+Portfólio: https://lc-code.netlify.app/
+
 #css #html #javascript #frontend #web #website #mediaquery #funções #webdevelopment #then  #portfolio #Portfólio #React #DesenvolvimentoWeb #ProjetoWeb #ReactRouterDom #EmailJS #FileSaver #CSS #HTML #TecnologiasWeb #FrontEnd #PortfólioAvançado #DesenvolvimentoDeSoftware #ProgramaçãoWeb #TutorialReact #TutorialPortfólio #WebDesign #DesenvolvimentoDeAplicativos #Usabilidade #ExperiênciaDoUsuário #AprendizadoDeMáquina #UIUX #DesenvolvimentoProfissional #Currículo #HabilidadesTécnicas
