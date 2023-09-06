@@ -1,0 +1,80 @@
+/* Define a animação para ocultar a seção de links de navegação */
+.nav_links_article_off {
+  animation: dissapear 0.5s linear forwards;
+}
+
+/* Define a animação de desaparecimento */
+@keyframes dissapear {
+  from {
+    transform: translateY(100%);
+    opacity: 0.7;
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+}
+
+/* Define a animação para mostrar a seção de links de navegação */
+.nav_links_article_on {
+  animation: appear 0.8s linear forwards;
+}
+
+/* Define a animação de aprecimento */
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Estiliza a seção de links de navegação quando ela está ativa */
+.nav_links_article_on {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: 80%;
+  margin-top: 70px;
+  margin-left: 5%;
+}
+
+/* Estiliza os parágrafos dentro dos links de navegação */
+.links p {
+  margin-top: 25px;
+  text-align: center;
+  font-size: 27px;
+  color: var(--letters-color);
+}
+
+/* Estiliza os links de navegação */
+.links {
+  width: 97vw;
+  height: 75px;
+  text-decoration: none;
+  position: relative;
+  color: #333;
+  transition: color 0.3s;
+}
+
+/* Cria uma linha animada abaixo dos links de navegação */
+.links::before {
+  content: "";
+  position: absolute;
+  width: 80%;
+  height: 4px;
+  border-radius: 20px;
+  background-color: var(--details-red);
+  top: 55%;
+  left: 10%;
+  transform: translateY(-50%) scaleX(0);
+  transition: transform 0.5s linear;
+}
+/* Anima a linha quado o link é hover */
+.links:hover::before {
+  transform: translateY(-50%) scaleX(1);
+  transform-origin: left;
+}

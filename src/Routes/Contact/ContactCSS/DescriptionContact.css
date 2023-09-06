@@ -1,0 +1,54 @@
+/* Estilos para a seção de descrição do contato */
+.section_description_contact {
+  width: 50%;
+  padding-bottom: 8%;
+  display: flex;
+  justify-content: center;
+  min-height: 80vh;
+  padding: 2% 0;
+}
+
+/* Estilos para o conteúdo na seção de descrição do contato */
+.article_description_contact {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Estilos para o título na seção de descrição do contato */
+.article_description_contact h2 {
+  padding-bottom: 8%;
+  width: 100%;
+  letter-spacing: 2.5px;
+}
+
+/* Estilos para o subtítulo na seção de descrição do contato */
+.article_description_contact h5 {
+  font-size: 17px;
+  width: 100%;
+  font-weight: 100;
+  line-height: 1.5;
+  letter-spacing: 3px;
+  padding-bottom: 10%;
+}
+
+/* Estilos para o botão de download do CV */
+.button_download_CV {
+  background-color: var(--details-red);
+  color: var(--letters-color);
+}
+
+/* Estilos para o botão de download do CV no hover */
+.button_download_CV:hover {
+  background-color: #db3030;
+}
+
+/* Medias Queries para telas menores */
+@media screen and (max-width: 768px) {
+  .section_description_contact {
+    width: 95%;
+    align-items: center;
+    text-align: center;
+  }
+}

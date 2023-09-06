@@ -1,0 +1,89 @@
+/* Estilo para a seção de template de trabalho */
+.section_work_template {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding-top: 8%;
+  gap: 3%;
+}
+
+/* Estilo para a imagem no tamplate de trabalho */
+.article_image_work_template {
+  display: block;
+  position: relative;
+  width: 55%;
+}
+
+/* Estilo para a imagem dentro do template de trabalho */
+.article_image_work_template img {
+  width: 100%;
+}
+
+/* Estilo para o texto no template de trbalho */
+.article_text_work_template {
+  width: 35%;
+}
+
+/* Estilo para o título no template de trabalho */
+.article_text_work_template h3 {
+  width: 90%;
+}
+
+/* Estilo para o texto no template de trabalho */
+.article_text_work_template p {
+  width: 90%;
+  padding: 5% 0;
+  line-height: 1.6;
+}
+
+/* Estilo para o botão no template de trabalho */
+.article_text_work_template button {
+  background-color: var(--details-red);
+  color: var(--letters-color);
+}
+
+/* Estilo para linsk de trabalho */
+.work_links {
+  text-decoration: none;
+  color: var(--letters-color);
+  width: 12rem;
+}
+
+/* Estilo para o botão no template de trabalho ao passar o mouse */
+.article_text_work_template button:hover {
+  background-color: #db3030;
+}
+
+/* Medias queries para telas menores */
+@media screen and (max-width: 768px) {
+  .section_work_template {
+    flex-direction: column;
+  }
+  /* Ajuste para a imagem */
+  .article_image_work_template {
+    width: 80%;
+  }
+  /* Ajuste para o artigo do texto */
+  .article_text_work_template {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+  }
+  /* Ajuste para o título */
+  .article_text_work_template h3 {
+    width: 90%;
+    text-align: center;
+  }
+  /* Ajuste para o texto */
+  .article_text_work_template p {
+    text-align: center;
+  }
+  /* Ajuste para o botão */
+  .article_text_work_template button {
+    width: 100%;
+  }
+}

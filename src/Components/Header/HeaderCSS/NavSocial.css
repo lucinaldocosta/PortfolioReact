@@ -1,0 +1,54 @@
+/* Define a classe CSS para a seção de redes sociais no cabeçalho */
+.social_article_header {
+  display: flex;
+  width: 20%;
+  margin-left: 20px;
+}
+
+/* Estiliza os ícones das redes sociais */
+.social_header {
+  padding: 7px;
+  width: 6.5vh;
+  margin-left: 10px;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+/* Animação para ocultar a seção de redes sociais */
+.social_article_header_off {
+  margin-left: 20px;
+  animation: dissapearSocial 0.5s linear forwards;
+}
+
+/* Animação para mostrar a seção de redes sociais */
+.social_article_header {
+  margin-left: 20px;
+  animation: appearSocial 1.2s linear forwards;
+}
+
+/* Estiliza o ícone das redes sociais ao passar o mouse por cima */
+.social_header:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Define a animação para ocultar a seção de redes sociais */
+@keyframes dissapearSocial {
+  from {
+    transform: translateY(60vh);
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+}
+
+/* Define a animação para mostrar a seção de redes sociais */
+@keyframes appearSocial {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

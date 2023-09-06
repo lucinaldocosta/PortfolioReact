@@ -1,0 +1,76 @@
+/* Define a estilização do container do logotipo */
+.logo_article_header {
+  width: 85%;
+  z-index: 75;
+}
+
+/* Define a estilização do logotipo */
+.logo_header {
+  position: relative;
+  top: -4px;
+  left: 28px;
+  fill: var(--header-home-footer);
+  background-color: transparent;
+  border-radius: 0 0 60% 60%;
+  z-index: 20;
+}
+
+/* Define a estilização das caixas que envolvem o logotipo */
+.logo_box_one_header,
+.logo_box_two_header {
+  position: absolute;
+  width: 13.8vh;
+  left: 27px;
+  margin-left: 1px;
+}
+
+/* Define a estilização da primeira caixa */
+.logo_box_one_header {
+  top: 0.8%;
+  height: 13.8vh;
+  border-radius: 0 0 60% 60%;
+  background-color: var(--details-red);
+  z-index: 15;
+}
+
+/* Defini a estilização da segunda caixa */
+.logo_box_two_header {
+  top: 0.5%;
+  height: 13.9vh;
+  border-radius: 100%;
+  background-color: #fff;
+  z-index: 10;
+}
+
+/* Defini a animação quando o logotipo muda de cor */
+.change_logo_enter {
+  animation: moveColor 0.5s linear alternate;
+}
+
+.change_logo_out {
+  animation: moveColorBack 0.5s linear alternate forwards;
+}
+
+/* Define a animação de movimento e cor */
+@keyframes moveColor {
+  from {
+    opacity: 0;
+    top: -20%;
+  }
+  to {
+    opacity: 1;
+    top: 4px;
+  }
+}
+
+/* Define a animação do movimento de saída */
+@keyframes moveColorBack {
+  from {
+    top: 0;
+    opacity: 1;
+  }
+  to {
+    top: -20%;
+    opacity: 0;
+  }
+}

@@ -1,0 +1,135 @@
+/* Estilo para a seção de detalhes do trabalho */
+.section_work_details_template {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Estilo para a descrição da seção de detalhes do trabalho */
+.article_work_details_template_description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 85vh;
+  color: var(--letters-color);
+  background: linear-gradient(
+      to right,
+      rgba(245, 245, 245, 0.8),
+      rgba(245, 245, 245, 0.8)
+    ),
+    url(../common-bg.svg);
+  background-size: cover;
+  background-position: center;
+}
+
+/* Estilo para o título da descrição da seção de detalhes do trbalho */
+.article_work_details_template_description h2 {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-align: center;
+  padding-bottom: 5%;
+  color: #111;
+  font-weight: 800;
+}
+
+/* Estilo para o texto da descrição da seção de detalhes do trbalho */
+.article_work_details_template_description p {
+  width: 55%;
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* Estilo para o artigo da descrição da seção de detalhes do trbalho */
+.article_work_details_template_img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding-top: 8%;
+  padding-bottom: 5%;
+}
+
+/* Estilo para a imagem da descrição da seção de detalhes do trbalho */
+.article_work_details_template_img img {
+  width: 75%;
+  height: 75%;
+}
+
+/* Estilo para o texto, tecnologias e botão de Go Back */
+.article_work_details_template_text,
+.article_work_details_template_tools,
+.article_work_details_template_go_back {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 60%;
+}
+
+/* Estilo para os títulos de texto e tecnologias */
+.article_work_details_template_text h3,
+.article_work_details_template_tools h3 {
+  width: 90%;
+  padding: 3% 0;
+}
+
+/* Estilo para o texto da descrição do trabalho */
+.article_work_details_template_text p {
+  width: 90%;
+  padding-left: 5%;
+  padding-bottom: 1%;
+  line-height: 1.6;
+}
+
+/* Estilo para a lista de tecnologia */
+.article_work_details_template_tools ul {
+  width: 100%;
+  padding-left: 5%;
+}
+
+/* Estilo para os itens da lista de tecnologia */
+.article_work_details_template_tools ul li {
+  width: 90%;
+  padding-left: 1%;
+  padding-bottom: 2%;
+  color: #3b3838;
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
+
+/* Estilo para o botão de Go Back */
+.article_work_details_template_go_back {
+  width: 100%;
+  height: 10%;
+  padding: 5% 0;
+  align-items: center;
+}
+.button_work_details_template_go_back {
+  background-color: var(--details-red);
+  color: var(--letters-color);
+  width: 15rem;
+}
+
+/* Estilo para o botão Go Back ao passar o mouse */
+.button_work_details_template_go_back:hover {
+  background-color: #db3030;
+}
+
+/* Medias Queries para telas menores */
+@media screen and (max-width: 768px) {
+  /* Ajuste para a imagem */
+  .article_work_details_template_img img {
+    width: 85%;
+    height: 85%;
+  }
+  /* Ajuste para o texto, tecnologias e botão de Go Back */
+  .article_work_details_template_text,
+  .article_work_details_template_tools,
+  .article_work_details_template_go_back {
+    width: 80%;
+  }
+}

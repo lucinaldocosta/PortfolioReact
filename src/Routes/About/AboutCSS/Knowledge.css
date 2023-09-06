@@ -1,0 +1,63 @@
+/* Estilos para a seção de conhecimentos */
+.section_knowledge {
+  width: 100%;
+  min-height: 105vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+/* Estilos para os artigos de conhecimentos de frontend e backend */
+.article_knowledge_frontend,
+.article_knowledge_backend {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  height: 80.5vh;
+}
+
+/* Estilos para os parágrafos nos artigos de conhecimentos */
+.article_knowledge_frontend p,
+.article_knowledge_backend p {
+  padding-top: 20px;
+  line-height: 1.6;
+}
+
+/* Estilo para a foto na seção de conhecimento */
+.article_knowledge_photo {
+  display: flex;
+  overflow: hidden;
+  width: 30%;
+  height: 80.5vh;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Estilo para a imagem na seção de conhecimento */
+.img_knowledge {
+  display: block;
+  width: 90%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Medias queries para telas menores */
+@media screen and (max-width: 768px) {
+  .section_knowledge {
+    flex-direction: column;
+    min-height: 80vh;
+  }
+  .article_knowledge_frontend,
+  .article_knowledge_backend {
+    align-items: center;
+    width: 75%;
+    height: 60.5vh;
+  }
+  .article_knowledge_photo {
+    width: 65%;
+    height: 50.5vh;
+  }
+}

@@ -1,0 +1,81 @@
+/* Estilos para a seção de certificados */
+.section_certificates {
+  width: 100%;
+  padding: 8% 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+/* Estilos para o conteúdo dentro da seção de certificados */
+.article_certificates {
+  padding-top: 8%;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
+}
+
+/* Estilos para o título na seção de certifcados */
+.section_certificates h2 {
+  color: #292929;
+}
+
+/* Estilos para o texto na seção de certificados */
+.div_certificates_text {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Estilos para os parágrafos dentro da seção de certificados */
+.div_certificates_text p {
+  line-height: 1.6;
+}
+
+/* Estilos para as fotos na seção de certificados */
+.div_certificates_photo {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+/* Estilos para as imagens na seção de certificados */
+.img_certificates {
+  width: 100%;
+  opacity: 0.5;
+  filter: blur(5px);
+  transition: opacity 0.5s, filter 0.5s;
+}
+
+/* Estilos para a escala e nitidez das imagens ao passar o mouse */
+.CS50:hover,
+.EFSET:hover,
+.SFPC:hover {
+  transform: scale(1.3);
+  opacity: 1;
+  filter: blur(0);
+  transition: transform 1s;
+}
+
+/* Medias queries para telas menores */
+@media screen and (max-width: 768px) {
+  .article_certificates {
+    flex-direction: column;
+  }
+  .div_certificates_text {
+    width: 80%;
+    padding: 5% 0;
+  }
+  .div_certificates_photo {
+    width: 80%;
+    padding: 10% 0;
+  }
+  .article_EFSET {
+    flex-direction: column-reverse;
+  }
+}

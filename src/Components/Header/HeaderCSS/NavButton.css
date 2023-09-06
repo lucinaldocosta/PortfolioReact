@@ -1,0 +1,53 @@
+/* Define a estilização dos ícones do menu de navegação */
+.menu_open_nav,
+.menu_close_nav {
+  fill: #fff;
+  position: relative;
+  cursor: pointer;
+  z-index: 75;
+  animation: spin 0.3s linear forwards;
+}
+/* Define a estilização do ícone do menu aberto */
+.menu_open_nav {
+  left: 10%;
+  top: 7%;
+  z-index: 75;
+}
+
+/* Define a estilização do ícone de menu fechado */
+.menu_close_nav {
+  position: relative;
+  left: 10%;
+  bottom: 76%;
+  z-index: 75;
+}
+
+/* Define a animação para ocultar os ícones do menu */
+.menu_dissapear {
+  opacity: 0;
+}
+
+/* Define a animação de rotação */
+@keyframes spin {
+  from {
+    opacity: 0;
+    transform: rotate(-180deg);
+  }
+  to {
+    opacity: 1;
+    transform: rotate(0deg);
+  }
+}
+
+/* Define a estilização do conteiner dos ícones do menu */
+.menu_article_nav {
+  width: 42pt;
+  height: 40pt;
+  border-radius: 0 0 0 10px;
+  z-index: 75;
+}
+
+/* Define a estilização quando o mouse está sobre o conteiner dos ícones do menu */
+.menu_article_nav:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
